@@ -5,8 +5,9 @@ for buying products PayPal sandbox has been integrated. This website also contai
 their shops, products and offers whereas admin interface allows administrator to manage traders and customers.<br>
 
 ### Technologies Used
- - HTML/CSS/Bootstrap 
+ - HTML/CSS/Bootstrap/JS
  - PHP
  - Oracle Database
  - PayPal Sandbox
+ 
 
