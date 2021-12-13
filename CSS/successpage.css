@@ -1,0 +1,286 @@
+.radius1{
+    position: absolute;
+    top: 2%;
+    left: 48%;
+    width: 92px;
+    height: 90px;
+    border-radius: 60px;
+    background-color: rgb(240, 172, 240);
+    opacity: .45;
+}
+
+.radius2{
+    position: absolute;
+    top: 7%;
+    left: 46.5%;
+    background-color: rgb(99, 0, 165);
+    width: 55px;
+    height: 55px;
+    border-radius: 40px;
+    opacity: .35;
+}
+.outside{
+    height: 100vh;
+}
+.outside h2{
+    position: absolute;
+    top: 14%;
+    left: 44.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(74, 0, 117);
+}
+
+.container{
+    position: absolute;
+    top: 25%;
+    left: 31%;
+    width:40%;
+    min-height: 520px;
+    box-shadow: 0 2px 12px 0px rgba(100, 0, 167, 0.233);
+}
+
+.container .icn i{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 50px;
+    opacity: 1;
+    color: rgb(0, 182, 55);
+}
+
+.container .icn{
+    position: absolute;
+    top: 7%;
+    left: 44%;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(43, 255, 0, 0.288);
+    border-radius: 35px;
+}
+
+.container .msg h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 110px;
+    color: rgb(74, 0, 117);
+}
+
+.container .msg p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(82, 82, 82);
+}
+
+.container .text p{
+    text-align: center;
+    padding-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+}
+
+
+  input {
+    border-style: none;
+    background: transparent;
+    outline: none;
+  }
+  
+  button {
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  .webflow-style-input {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 2px;
+    padding: .4rem 1.5rem .7rem;
+    background: rgba(111, 0, 255, 0.055);
+
+  }
+  .webflow-style-input:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+    height: 2px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-position: 0% 0%;
+    background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6);
+    background-size: 500% auto;
+    animation: gradient 3s linear infinite;
+  }
+  
+  .webflow-style-input input {
+    flex-grow: 1;
+    color: rgb(59, 0, 126);
+    font-size: 1rem;
+  }
+  
+  .webflow-style-input button {
+    color: #7881A1;
+    font-size: 1.5rem;
+    padding-top: .2rem ;
+    transition: color .25s;
+  }
+  .webflow-style-input button:hover {
+    color: #BFD2FF;
+  }
+  
+  /* ---------------Button------------------- */
+
+.banner{
+
+    padding: 1.2rem 14.5rem;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.butn:link,
+.butn:visited {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #5e16bd;
+  background-image: linear-gradient(90deg, #501aa8, #870de8);
+  padding: 1rem 2.5rem;
+  height: 2rem;
+  width: 10rem;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+}
+.butn::before {
+  background: #fff;
+  content: "";
+  height: 155px;
+  opacity: 0;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  width: 50px;
+  transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.butn::after {
+  background: #fff;
+  content: "";
+  height: 20rem;
+  opacity: 0;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 3000ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 8rem;
+}
+.butn__new::before {
+  left: -50%;
+}
+
+.butn__new::after {
+  left: -100%;
+}
+
+.butn:hover,
+.butn:active {
+  transform: translateY(-3px);
+  color: #fff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .3);
+}
+
+.butn__new:hover::before {
+  left: 120%;
+  opacity: 0.5s;
+}
+
+.butn__new:hover::after {
+  left: 200%;
+  opacity: 0.6;
+}
+.butn span {
+  z-index: 20;
+}
+
+.bottom p{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 95%;
+    left: 40%;
+    font-size: 14px;
+}
+
+.bottom a{
+    text-decoration: none;
+    color: rgb(104, 1, 173);
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1300px) {
+    /* .container{
+        min-width: 500px;
+    } */
+
+    .banner{
+        padding-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    
+    .webflow-style-input {
+        width: 50%;
+        
+    }
+
+    .webflow-style-input button {
+        display: none;
+      }
+}
+
+@media screen and (max-width: 768px) {
+    .banner .butn{
+        width: 40px;
+    }
+    .bottom{
+        position: absolute;
+        top: 95%;
+        left: 40%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .webflow-style-input input {
+     display: none;   
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .banner .butn{
+        display: none;
+    }
+}

@@ -1,0 +1,245 @@
+.product-image {
+    float: left;
+    width: 15%;
+    text-align: center;
+  }
+  
+  .product-details {
+    float: left;
+    width: 10%;
+    text-align: center;
+  }
+  
+  .product-price {
+    float: left;
+    width: 10%;
+    text-align: center;
+  }
+  
+  .product-quantity {
+    float: left;
+    width: 10%;
+    text-align: center;
+  }
+  .product-min {
+    float: left;
+    width: 18%;
+    text-align: center;
+  }
+
+  .product-max {
+    float: left;
+    width: 12%;
+    text-align: center;
+  }
+
+  .product-discount {
+    float: left;
+    width: 15%;
+    text-align: center;
+  }
+
+  .product-total {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+  .product-removal {
+    float: left;
+    width: 18%;
+    padding-left: 12px;
+    text-align: center;
+  }
+
+
+  .group:before, .shopping-cart:before, .column-labels:before, .product:before,
+  .group:after,
+  .shopping-cart:after,
+  .column-labels:after,
+  .product:after {
+    content: '';
+    display: table;
+  }
+  
+  .group:after, .shopping-cart:after, .column-labels:after, .product:after {
+    clear: both;
+  }
+
+  .header h1{
+    visibility: hidden;
+  }
+  label {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgb(87, 85, 85);
+    padding-top: 15px;
+  }
+  
+  .shopping-cart {
+    margin-top: 40px;
+    padding: 0px 30px 30px 20px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    
+  }
+  
+  /* Column headers */
+  .column-labels label {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+  }
+
+  /* Product entries */
+  .product {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+
+  }
+  .product .product-image {
+    text-align: center;
+  }
+  .product .product-image img {
+    width: 145px;
+    height: 105px;
+  }
+  .product .product-details .product-title {
+    /* margin-right: 20px;*/
+    margin-top: 45px; 
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .product .product-price .price{
+    margin-top: 45px;
+  }
+
+  .product .product-quantity .qty {
+    margin-top: 45px;
+  }
+
+  .product .product-min .min{
+      margin-top: 45px;
+
+  }
+
+  .product .product-max .max{
+    margin-top: 45px;
+  }
+
+  .product .product-discount .discount{
+    margin-top: 45px;
+  }
+
+  .product .product-total .total{
+    margin-top: 45px;
+}
+  
+
+  .product .remove-product {
+    background:rgb(75, 75, 75);
+    color:#fff;
+    border:none;
+    position:relative;
+    height:30px;
+    width: 150px;
+    font-size:1em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    margin-top: 2px;
+  }
+  .product .remove-product:hover {
+    background:#fff;
+    color:rgb(0, 0, 0);
+  }
+  .remove-product:before,.remove-product:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: rgb(0, 0, 0);
+    transition:400ms ease all;
+  }
+  .remove-product:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .remove-product:hover:before,.remove-product:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+
+
+    /* Make adjustments for tablet */
+    @media screen and (max-width:1332px){
+        .product-removal {
+          padding-left: 0;
+          float: left;
+        }
+      }
+    
+      @media screen and (max-width: 1146px) {
+        .shopping-cart {
+          margin: 0;
+          padding-top: 20px;
+          border-top: 1px solid #eee;
+        }
+      
+        .column-labels {
+          display: none;
+        }
+      
+        .product-image {
+          float: right;
+          width: auto;
+        }
+        .product-image img {
+          margin: 0 0 10px 10px;
+        }
+      
+        .product-details {
+          float: none;
+          margin-bottom: 10px;
+          width: auto;
+        }
+      
+        .product-price {
+          clear: both;
+          width: 70px;
+        }
+      
+        .product-quantity {
+          width: 100px;
+        }
+        .product-quantity input {
+          margin-left: 20px;
+        }
+      
+        .product-quantity:before {
+          content: '';
+        }
+      
+        .product-removal {
+          width: auto;
+        }
+
+    
+      }
+    
+     
+      /* Make more adjustments for phone */
+      @media screen and (max-width: 350px) {
+        .product-removal {
+          float: right;
+        }
+      }

@@ -1,0 +1,223 @@
+@charset "UTF-8";
+body {
+  background: #fff;
+  padding: 15px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.DD .content {
+  background: #fff;
+  border-radius: 3px;
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075), 0 2px 4px rgba(0, 0, 0, 0.0375); */
+  padding: 30px;
+  outline: none;
+}
+
+.DD .panel-group {
+  margin-bottom: 0;
+}
+.DD .panel-group .panel {
+  border-radius: 0;
+  box-shadow: none;
+}
+.DD .panel-group .panel .panel-heading {
+  padding: 0;
+}
+.DD .panel-group .panel .panel-heading h4 a {
+  background: #fff;
+  color: black;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  text-decoration: none;
+  transition: 0.15s all ease-in-out;
+  outline: none;
+}
+
+.DD .panel-group .panel .panel-heading h4 a:hover, .panel-group .panel .panel-heading h4 a:not(.collapsed) {
+  background: #fff;
+  transition: 0.15s all ease-in-out;
+}
+.DD .panel-group .panel .panel-heading h4 a:not(.collapsed) i:before {
+  content: "\f077";
+}
+.DD .panel-group .panel .panel-heading h4 a i {
+  color: rgb(192, 184, 184);
+  float: right;
+}
+.DD .panel-group .panel .panel-body {
+  padding-top: 0;
+}
+.DD .panel-group .panel .panel-body p{
+  padding-left:15px;
+  font-size: 15px;
+  color: rgb(85, 85, 85);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.DD .panel-group .panel .panel-body p i{
+  padding-top: 20px;
+  padding-right: 10px;
+  font-size: 13px;
+}
+.DD .panel-group .panel .panel-heading + .panel-collapse > .list-group,
+.DD .panel-group .panel .panel-heading + .panel-collapse > .panel-body {
+  border-top: none;
+}
+.DD .panel-group .panel + .panel {
+  border-top: none;
+  margin-top: 0;
+}
+
+.DD .panel{
+  border-bottom: 3px solid rgb(185, 166, 166);
+}
+
+.comment{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.comment .container{
+  width: 1050px;
+  box-shadow: 1px 10px 12px rgba(0, 0, 0, 0.075), 0 2px 4px rgba(0, 0, 0, 0.0375);
+  padding:15px 10px ;
+}
+
+.comment .container h2{
+  text-align: center;
+  margin-bottom: 15px;
+
+}
+
+textarea{
+  height: 30px;
+  width: 95%;
+  border: none;
+  border-bottom: 2px solid #aaa;
+  background-color: transparent;
+  margin-bottom: 10px;
+  resize: none;
+  outline: none;
+  transition: .5s;
+  font-size: 18px;
+}
+
+input[type="Submit"]{
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius:5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  background-color: #273c75;
+
+}
+
+.btn{
+  display: none;
+}
+
+/* *,
+*::before,
+*::after{
+  margin:0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+section{
+  width: 100%;
+  height: 100vh;
+  background-color: lavenderblush;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  width: 100%;
+  max-width: 88rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.accordion-item{
+  background-color: #fff;
+  border-radius: .4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.accordion-link{
+  font-size: 1.8rem;
+  color: rgba(39, 36, 36, 0.623);
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.accordion-link i{
+  color: brown;
+  padding: .5rem;
+}
+
+.accordion-link .fa-chevron-down{
+  display: none;
+}
+
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+  transition: max-height 650ms;
+}
+
+.answer::before{
+  content: "";
+  position: absolute;
+  width: .6rem;
+  height: 90%;
+  background-color: brown;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.answer p{
+  font-size: 1.4rem;
+  color: brown;
+  padding: 2rem;
+}
+
+.accordion-item:target .answer{
+  max-height: 20rem;
+  
+}
+
+
+
+.accordion-item:target .accordion-link .fa-chevron-up{
+  display: none;
+}
+
+.accordion-item:target .accordion-link .fa-chevron-down{
+  display: block;
+} */

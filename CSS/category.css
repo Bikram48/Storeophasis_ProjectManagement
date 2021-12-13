@@ -1,0 +1,18 @@
+.cat{
+    margin-top: 80px;
+}
+.cat img
+{
+    width: 100%;
+    z-index: 1;
+}
+
+.cat button
+{
+   position: absolute;
+    right:30%;
+    border:none;
+    width:150px;
+    background-color:aqua;
+}
+

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Muli', sans-serif;
+}
+header{
+    position: relative;
+    max-width: 1500px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+nav{
+    float: right;
+}
+
+.clearfix{
+    clear: both;
+}
+ nav ul{
+     margin:0;
+     padding:0;
+     display: flex;
+ }
+
+ nav ul li{
+     list-style: none;
+ }
+
+ nav ul li a{
+     display: block;
+     margin: 10px 0;
+     padding: 20px 45px;
+     text-decoration: none;
+     color: #262622;
+
+ }
+ @media (max-width:1500px)
+ {
+    nav ul li a{
+         padding:20px 10px;
+     }
+ }
+ @media (max-width:1500px)
+{
+    header{
+        margin: 20px;
+    }
+}
+
+ nav ul li a.active,
+ nav ul li a:hover{
+    background: #e84118 ;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* .search-container {
+    float: right;
+  } */
+  
+  input[type=text] {
+    padding: 6px;
+    margin-top: 20px;
+    font-size: 17px;
+    border: none;
+    background: rgba(116, 116, 116, 0.39);
+  }
+  
+.search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 20px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .search-container button:hover {
+    background: #eee;
+  }
+  
+
+@media (max-width:1500px)
+{
+    header{
+        margin: 20px;
+    }
+}
+
+@media (max-width:768px)
+{
+    .menu-toggle{
+        display: block;
+        width: 40px;
+        height:40px;
+        margin: 10px;
+        background: #ccc;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        color: #e84118;
+    }
+    .menu-toggle:before
+    {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+    .menu-toggle.active:before
+    {
+        content: '\f00d';
+    }
+    nav
+    {
+        display: none;
+    }
+    nav.active
+    {
+        display: block;
+        width: 100%;
+    }
+    nav.active ul
+    {
+        display: block;
+    }
+    nav.active ul li a
+    {
+        margin: 0;
+    }
+    
+}
+
+.user-area {
+    float: right;
+    padding-right: 0;
+    position: relative;
+    top:20px;
+}
+.user-area .user-menu 
+{
+      background: #fff;
+      border: none;
+      font-family: 'Open Sans';
+      left: inherit !important;
+      right: 150px;
+      top: 55px !important;
+      margin-right: 150px;
+      max-width: 150px;
+      padding: 5px 10px;
+      position: absolute;
+      width: 100%;
+      z-index: 999;
+      min-width: 150px; 
+}
+    .user-area .user-menu .nav-link {
+        color: #272c33;
+        display: block;
+        font-size: 14px;
+        line-height: 22px;
+        padding: 5px 0; 
+    }
+
+    .user-area .user-avatar {
+      float: right;
+      margin-top: 4px;
+      width: 32px; 
+    }
+
+    .user-area .user-info .name {
+      color: #8c8c8c;
+      font-size: 14px;
+      position: relative;
+      text-transform: uppercase; 
+    }
+
+    .user-area .count 
+    {
+      background: #d9534f;
+      border-radius: 50%;
+      color: #fff;
+      font-family: 'Open Sans';
+      font-size: 9px;
+      font-weight: 700;
+      float: right;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center; 
+    }
+
+    .user-area .dropdown-toggle:after 
+    {
+      display: none; 
+    }
+  
+
